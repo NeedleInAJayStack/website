@@ -1,6 +1,6 @@
-# test-project
+# Jays Website
 
-> A Vue.js project
+This is the code for my website. It was uses Vue.js.
 
 ## Build Setup
 

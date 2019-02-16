@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Home",
   data() {
     return {
       msg: "Hi, I'm Jay. Welcome to my website!"
