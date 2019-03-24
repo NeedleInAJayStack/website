@@ -46,12 +46,12 @@
 
 <script>
 export default {
-  name: "Home",
+  name: 'Home',
   data() {
     return {
-      msg: "Hi, I'm Jay. Welcome to my website!"
+      msg: "Hi, I'm Jay. Welcome to my website!",
     };
-  }
+  },
 };
 </script>
 
