@@ -1,27 +1,32 @@
 # Jays Website
 
-This is the code for my website. It was uses Vue.js.
+This is the code for my website.
 
-## Build Setup
+## Run
 
-``` bash
-# install dependencies
-npm install
+The server can be run locally by doing the following:
 
-# serve with hot reload at localhost:8080
-npm run dev
+1. Install node
+2. Update/clone from the git repository. Enter directory.
+3. Install relevant modules: npm install
+4. Start the process: node server.js
 
-# build for production with minification
-npm run build
+## Docker
 
-# build for production and view the bundle analyzer report
-npm run build --report
+Alternatively, the server can be run in Docker to isolate the environment and provide automatic startup
 
-# run unit tests
-npm run unit
+### Build Image
+    sudo docker build -t needleinajaystack/website .
 
-# run all tests
-npm test
-```
+### Run Container
+    sudo docker run -p 3002:3002 -d --restart=always needleinajaystack/website
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Stop Container
+    sudo docker ps // Get <container.id>
+    sudo docker stop <container.id>
+
+### Delete Image
+    sudo docker rm <container.id>
+    sudo docker images  // Get <image.id>
+    sudo docker rmi <image.id>
+
