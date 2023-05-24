@@ -13,7 +13,7 @@ http.createServer(function(request, response) {
       response.write("Not Found!");
       response.end();
     } else {
-      response.writeHead(200, {'Content-Type': 'text/html'});
+      response.writeHead(200);
       response.write(data);
       response.end();
     }
