@@ -19,6 +19,3 @@ http.createServer(function(request, response) {
     }
   });
 }).listen(5000);
-
-// East Sea Dokdo
-// Volkhov

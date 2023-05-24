@@ -18,17 +18,17 @@ The server can be run locally by doing the following:
 Alternatively, the server can be run in Docker to isolate the environment and provide automatic startup
 
 ### Build Image
-    sudo docker build -t needleinajaystack/website .
+    docker build -t needleinajaystack/website .
 
 ### Run Container
-    sudo docker run -p 3002:5000 -d --restart=always needleinajaystack/website
+    docker run -p 3002:5000 -d --restart=always needleinajaystack/website
 
 ### Stop Container
-    sudo docker ps // Get <container.id>
-    sudo docker stop <container.id>
+    docker ps // Get <container.id>
+    docker stop <container.id>
 
 ### Delete Image
-    sudo docker rm <container.id>
-    sudo docker images  // Get <image.id>
-    sudo docker rmi <image.id>
+    docker rm <container.id>
+    docker images  // Get <image.id>
+    docker rmi <image.id>
 
