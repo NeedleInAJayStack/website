@@ -21,7 +21,7 @@ Alternatively, the server can be run in Docker to isolate the environment and pr
     docker build -t needleinajaystack/website .
 
 ### Run Container
-    docker run -p 3002:5000 -d --restart=always needleinajaystack/website
+    docker run -p 3002:5000 -d --restart=on-failure needleinajaystack/website
 
 ### Stop Container
     docker ps // Get <container.id>
