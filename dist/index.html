@@ -8,10 +8,17 @@
 	<head>
 		<title>Jay Herron</title>
 		<meta charset="utf-8" />
-		<script src="https://kit.fontawesome.com/2384b77765.js" crossorigin="anonymous"></script>
+		<script src="assets/js/jquery.min.js" defer></script>
+		<script src="assets/js/jquery.scrollex.min.js" defer></script>
+		<script src="assets/js/jquery.scrolly.min.js" defer></script>
+		<script src="assets/js/browser.min.js" defer></script>
+		<script src="assets/js/breakpoints.min.js" defer></script>
+		<script src="assets/js/util.js" defer></script>
+		<script src="assets/js/main.js" defer></script>
+		<script src="https://kit.fontawesome.com/2384b77765.js" crossorigin="anonymous" async></script>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main.css" blocking="render" />
 	</head>
 	<body class="is-preload">
 
@@ -53,7 +60,13 @@
 		<!-- One -->
 			<section id="one" class="main special">
 				<div class="container">
-					<span class="image fit primary"><img src="images/Sunset_Beach.jpg" alt="" /></span>
+					<span class="image fit primary">
+						<img
+						src="images/Sunset_Beach_1024w.jpg"
+						srcset="images/Sunset_Beach_1024w.jpg 1024w, images/Sunset_Beach_512w.jpg 512w"
+						alt=""
+						/>
+					</span>
 					<div class="content">
 						<header class="major">
 							<h2>Who I am</h2>
@@ -72,7 +85,13 @@
 		<!-- Two -->
 			<section id="two" class="main special">
 				<div class="container">
-					<span class="image fit primary"><img src="images/Mountains.jpg" alt="" /></span>
+					<span class="image fit primary">
+						<img
+						src="images/Mountains_5181w.jpg"
+						srcset="images/Mountains_5181w.jpg 5181w, images/Mountains_2448w.jpg 2448w, images/Mountains_1224w.jpg 1224w, images/Mountains_490w.jpg 490w"
+						alt=""
+						/>
+					</span>
 					<div class="content">
 						<header class="major">
 							<h2>Stuff I do</h2>
@@ -136,15 +155,5 @@
 					</ul>
 				</footer>
 			</section>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
