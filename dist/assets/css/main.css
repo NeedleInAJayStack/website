@@ -92,13 +92,13 @@ input, select, textarea {
 
 	@media only screen and (max-device-width: 1224px) {
 		html {
-			background-image: url("../../images/Clouds_1224w.webp");
+			background-image: url("images/overlay.png"), url("../../images/Clouds_1224w.webp");
 		}
 	}
 
 	@media only screen and (max-device-width: 490px) {
 		html {
-			background-image: url("../../images/Clouds_490w.webp");
+			background-image: url("images/overlay.png"), url("../../images/Clouds_490w.webp");
 		}
 	}
 
