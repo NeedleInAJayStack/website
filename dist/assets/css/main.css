@@ -84,7 +84,7 @@ input, select, textarea {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/Clouds_2448w.jpg");
+		background-image: url("images/overlay.png"), url("../../images/Clouds_2448w.webp");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
@@ -92,13 +92,13 @@ input, select, textarea {
 
 	@media only screen and (max-device-width: 1224px) {
 		html {
-			background-image: url("../../images/Clouds_1224w.jpg");
+			background-image: url("../../images/Clouds_1224w.webp");
 		}
 	}
 
 	@media only screen and (max-device-width: 490px) {
 		html {
-			background-image: url("../../images/Clouds_490w.jpg");
+			background-image: url("../../images/Clouds_490w.webp");
 		}
 	}
 
