@@ -84,21 +84,21 @@ input, select, textarea {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/Clouds_2448w.webp");
+		background-image: url("images/overlay.png"), url("../../images/Background_3897.webp");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
 	}
 
-	@media only screen and (max-device-width: 1224px) {
+	@media only screen and (max-device-width: 2448px) {
 		html {
-			background-image: url("images/overlay.png"), url("../../images/Clouds_1224w.webp");
+			background-image: url("images/overlay.png"), url("../../images/Background_2448.webp");
 		}
 	}
 
-	@media only screen and (max-device-width: 490px) {
+	@media only screen and (max-device-width: 1224px) {
 		html {
-			background-image: url("images/overlay.png"), url("../../images/Clouds_490w.webp");
+			background-image: url("images/overlay.png"), url("../../images/Background_1224.webp");
 		}
 	}
 
