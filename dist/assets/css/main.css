@@ -84,21 +84,21 @@ input, select, textarea {
 	html {
 		background-color: #313a3d;
 		background-attachment: fixed,						fixed;
-		background-image: url("images/overlay.png"), url("../../images/Clouds_2448w.webp");
+		background-image: url("images/overlay.png"), url("../../images/Background_3897.webp");
 		background-position: top left,					center center;
 		background-repeat: repeat,						none;
 		background-size: auto,						cover;
 	}
 
-	@media only screen and (max-device-width: 1224px) {
+	@media only screen and (max-device-width: 2448px) {
 		html {
-			background-image: url("images/overlay.png"), url("../../images/Clouds_1224w.webp");
+			background-image: url("images/overlay.png"), url("../../images/Background_2448.webp");
 		}
 	}
 
-	@media only screen and (max-device-width: 490px) {
+	@media only screen and (max-device-width: 1224px) {
 		html {
-			background-image: url("images/overlay.png"), url("../../images/Clouds_490w.webp");
+			background-image: url("images/overlay.png"), url("../../images/Background_1224.webp");
 		}
 	}
 
@@ -2198,7 +2198,6 @@ input, select, textarea {
 			text-rendering: auto;
 			line-height: 1;
 			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
 		}
 
 		.icon > .label {
@@ -2733,10 +2732,6 @@ input, select, textarea {
 		z-index: -1;
 	}
 
-		.main-bg.active {
-			opacity: 1;
-		}
-
 /* Main */
 
 	.main {
@@ -2744,7 +2739,8 @@ input, select, textarea {
 	}
 
 		.main .image.primary {
-			display: none;
+			display: block;
+			margin: 0 0 4em 0;
 		}
 
 		.main .container {
@@ -2752,14 +2748,6 @@ input, select, textarea {
 			background: rgba(255, 255, 255, 0.95);
 			box-shadow: inset 0 1px 0 0 #dddddd;
 		}
-
-			.main .container:before {
-				min-height: calc( 100vh - 13em);
-				content: '';
-				display: inline-block;
-				vertical-align: middle;
-				width: 1px;
-			}
 
 			.main .container .content {
 				display: inline-block;
@@ -2953,18 +2941,9 @@ input, select, textarea {
 
 		/* Main */
 
-			.main .image.primary {
-				display: block;
-				margin: 0 0 4em 0;
-			}
-
 			.main .container {
 				padding: 3em 3em 8em 3em ;
 			}
-
-				.main .container:before {
-					display: none;
-				}
 
 		/* Header */
 
@@ -3020,32 +2999,6 @@ input, select, textarea {
 			.main .goto-next {
 				display: none;
 			}
-
-		/* Header */
-
-			#header {
-				height: 80vh;
-			}
-
-				#header:after {
-					height: 80vh;
-				}
-
-				#header header {
-					padding-bottom: 0;
-				}
-
-					#header header h1 {
-						font-size: 2em;
-					}
-
-					#header header p {
-						margin-top: 1em;
-					}
-
-				#header .container {
-					display: none;
-				}
 
 		/* Footer */
 
@@ -3134,6 +3087,12 @@ input, select, textarea {
 				.button.icon {
 					padding-left: 0;
 				}
+
+		/* Header */
+
+		#header .container {
+			margin-left: -50%;
+		}
 
 		/* Main */
 
