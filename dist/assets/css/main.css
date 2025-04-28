@@ -2622,81 +2622,88 @@ input, select, textarea {
 				background-color: rgba(144, 144, 144, 0.15);
 			}
 
-/* Header */
+/* Toolbar */
 
-	#header {
+	#toolbar {
+		background: rgba(255, 255, 255);
+		border: 10px solid rgba(255, 255, 255);
+		text-align: center;
+		position: fixed;
+		left: 0;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+
+		#toolbar ul {
+			margin: 0 0 0 0;
+		}
+
+/* Banner */
+
+	#banner {
 		height: 100vh;
-		padding: 0 0 12em 0;
 		position: relative;
 		text-align: center;
 	}
 
-		#header .toolbar {
-			background: rgba(255, 255, 255);
-			border: 10px solid rgba(255, 255, 255);
-			text-align: center;
-		}
-
-			#header .toolbar ul {
-				margin: 0 0 0 0;
-			}
-
-		#header:after {
+		#banner:after {
 			content: '';
 			display: inline-block;
 			height: 100vh;
 			vertical-align: middle;
 		}
 
-		#header header {
+		#banner header {
 			color: rgba(255, 255, 255, 0.5);
 			display: inline-block;
 			padding-bottom: 8em;
 			vertical-align: middle;
 		}
 
-			#header header h1, #header header h2, #header header h3, #header header h4, #header header h5, #header header h6, #header header strong, #header header b {
+			#banner header h1, #header header h2, #header header h3, #header header h4, #header header h5, #header header h6, #header header strong, #header header b {
 				color: #ffffff;
 			}
 
-			#header header a {
+			#banner header a {
 				color: inherit;
 			}
 
-				#header header a:hover {
+				#banner header a:hover {
 					color: #ffffff !important;
 				}
 
-			#header header h1 {
+			#banner header h1 {
 				font-size: 3em;
 				line-height: 1.25em;
 				margin: 0;
 			}
 
-				#header header h1:after {
+				#banner header h1:after {
 					margin-top: 0.5em;
 				}
 
-			#header header p {
+			#banner header p {
 				color: #ffffff;
 				font-weight: 700;
 				margin: 1.5em 0 0 0;
 			}
 
-		#header .container {
+		#banner .container {
 			background: rgba(255, 255, 255, 0.95);
-			bottom: 0;
-			left: 50%;
-			margin-left: -17.5em;
 			padding: 2.5em;
 			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
 		}
 
-			#header .container > :last-child {
+			#banner .container > :last-child {
 				margin-bottom: 0;
 			}
 
-			#header .container .button {
+			#banner .container .button {
 				min-width: 12em;
 			}
 
