@@ -1,0 +1,21 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "Jay Herron's website",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "dev": "npx parcel src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeedleInAJayStack/website.git"
+  },
+  "author": "Jay Herron",
+  "bugs": {
+    "url": "https://github.com/NeedleInAJayStack/website/issues"
+  },
+  "homepage": "https://github.com/NeedleInAJayStack/website#readme",
+  "devDependencies": {
+    "parcel": "^2.16.1"
+  }
+}
