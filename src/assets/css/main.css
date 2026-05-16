@@ -988,8 +988,19 @@ mark {
 			#banner header p {
 				color: #ffffff;
 				font-weight: 700;
+			}
+
+			div.tagline {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 0 0.5em;
 				margin: 1.5em 0 0 0;
 			}
+				div.tagline p {
+					white-space: nowrap;
+					margin: 0 0 0 0;
+				}
 
 		#banner .container {
 			background: rgba(255, 255, 255, 0.95);
