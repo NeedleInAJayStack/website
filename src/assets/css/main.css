@@ -770,20 +770,14 @@ body {
 		height: 100vh;
 		position: relative;
 		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
-
-		#banner:after {
-			content: '';
-			display: inline-block;
-			height: 100vh;
-			vertical-align: middle;
-		}
 
 		#banner header {
 			color: rgba(255, 255, 255, 0.5);
-			display: inline-block;
 			padding-bottom: 8em;
-			vertical-align: middle;
 		}
 
 			#banner header h1, #header header h2, #header header h3, #header header h4, #header header h5, #header header h6, #header header strong, #header header b {
